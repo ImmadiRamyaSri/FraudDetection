@@ -1,0 +1,8 @@
+data/
+notebooks/
+src/
+tests/
+__pycache__/
+*.ipynb
+.git/
+.env
