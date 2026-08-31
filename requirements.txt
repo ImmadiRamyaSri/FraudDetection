@@ -8,3 +8,12 @@ imbalanced-learn
 joblib
 fastapi
 uvicorn
+pandas
+numpy
+scikit-learn
+xgboost
+imbalanced-learn
+joblib
+fastapi
+uvicorn
+pydantic

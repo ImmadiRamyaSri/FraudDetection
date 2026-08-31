@@ -1,17 +1,7 @@
-# Dataset (Too large for GitHub > 100MB)
-*.csv
 creditcard.csv
-
-# Jupyter & Python cache
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
-
-# Virtual Environments
 venv/
 env/
 .env
-
-# Model Artifacts (optional or large files)
-*.pkl
-*.joblib
