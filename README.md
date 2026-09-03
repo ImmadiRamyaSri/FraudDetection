@@ -3,6 +3,14 @@ PythonScikit-LearnXGBoostImbalanced-LearnFastAPIDockerAWS
 
 An end-to-end Machine Learning pipeline for detecting fraudulent credit card transactions in extremely imbalanced financial data — from EDA through production deployment with a real-time REST API on AWS EC2.
 
+## 🚀 Live API Deployment
+This model is currently deployed live on an **AWS EC2** instance using **Docker** and **FastAPI**.
+
+*   **Test the API (Swagger UI):** [http://65.0.105.131:8000/docs](http://65.0.105.131:8000/docs)
+*   **Health Check Endpoint:** [http://65.0.105.131:8000/health](http://65.0.105.131:8000/health)
+
+*(Note: Click "Try it out" on the `/predict` endpoint in the Swagger UI to send a sample transaction and see the AI's risk stratification in real-time).*
+
 📌 Project Overview
 In financial fraud detection, class imbalance is a severe challenge. Standard accuracy is misleading because a dummy classifier predicting 100% legitimate transactions would achieve 99.83% accuracy while missing 100% of fraud.
 
@@ -174,6 +182,7 @@ cd CreditCard-Fraud-Detection
 docker build -t fraud-detection-api .
 docker run -d -p 8000:8000 fraud-detection-api
 Access the live API at http://<YOUR-EC2-PUBLIC-IP>:8000/docs
+
 
 🔮 Future Enhancements
  Add batch prediction endpoint (/predict/batch) for high-throughput scoring
